@@ -1,0 +1,42 @@
+[passwordGitHub]
+beStrong123!
+
+[URL-CURSO]
+https://www.youtube.com/watch?v=yYknmU_gBgs&list=PLCC34OHNcOtrZTjsC5qtn_X9eRAmGmGOI&index=7
+
+[Creamos la carpeta SSH]
+mkdir .SSH
+[Ingresamos a la carpeta] 
+cd .SSH
+[Creamos llave]
+$ ssh-keygen.exe
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/usuario/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/usuario/.ssh/id_rsa
+Your public key has been saved in /c/Users/usuario/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:XoZDUfzC6hmmMbaI5CnomCnVKWsXoxPeXpnsFL6EUwE usuario@toshiba2
+The key's randomart image is:
++---[RSA 3072]----+
+|    E   .o.      |
+|     .   ..      |
+|      . .. .     |
+|       o .o .    |
+|   . .o S.o.     |
+|  = ==+=++       |
+|.= Oo=OB.o       |
+|=oX +*o.o        |
+|*+ +. o          |
++----[SHA256]-----+
+[Observamos en que directorio estamos]
+usuario@toshiba2 MINGW64 ~/.ssh
+$ pwd
+/c/Users/usuario/.ssh
+
+[verificacion de llave publica]
+usuario@toshiba2 MINGW64 ~/.ssh
+$ cat /c/Users/usuario/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj4oXfuVnoNvPDPXWnH8e0x8DunLV7tUzOyoGnt2uffAEjr98ghVhfMkJLWg4vk5ozooTmCpIdVEa5ohvsnWVVooxiT0+dG3Cm+NIkcP8S8tsMEKQ76v97oDMA3T/krDD7A1s7+7uQ9ZgdhtC93imOLyNtOmFaH7pAwbBrPpGcVXW88blJqeSscBisC7bvKVckBLeoHd9NXkIcOVTER4Wb6H/xr/3zYFaP7Inc0dxcvVfEZtEZEEmrMSlgEB6rj/1Kw+aLPsfYbmRd3bx6cMYFLwLoMdGXmHo10ofNtKC4ValffgPfzCArsSAoIQfKEKKGPZ+mFTKHH/Udm5lmSfp36HjCTMRkA6imcK+uFm8EO2iLBAt1s+ZPT7LJZ/6y0gOIPxCxCqiJoQ1f3QWx2kK/EZhDv1SKtxjGcsu0JhJ22h+0YCpAoMKCASiGyrzhtwwrHOtAp9zv6+roflWIP1klpMDYHvu6zlWzN+ax/63Pci7shBSnunrQ3isTIydwBd0= usuario@toshiba2
+
